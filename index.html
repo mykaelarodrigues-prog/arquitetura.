@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arquitetura & Urbanismo | Feira de Profissões</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Customizados -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Navegação -->
+  <header>
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-compass-drafting">
+          <span class="sr-only">Ícone de Compasso</span>
+        </i>
+        ARQ<span>URB</span>
+      </a>
+
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">A Profissão</a></li>
+          <li><a href="#historia" class="nav-link">História</a></li>
+          <li><a href="#mercado" class="nav-link">Mercado</a></li>
+          <li><a href="#stand" class="nav-link">Nosso Stand</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Arquitetura Moderna">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <span class="badge">Projeto Feira de Profissões</span>
+        <h1>Projetando Espaços,<br><span class="highlight">Transformando Vidas.</span></h1>
+        <p class="slogan">"A arquitetura é a arte de esculpir o espaço onde a vida acontece."</p>
+        
+        <div class="hero-actions">
+          <a href="#sobre" class="btn btn-primary">
+            Explorar a Carreira <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#stand" class="btn btn-secondary">
+            Ver Nosso Stand <i class="fa-solid fa-images"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apresentação da Profissão -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>A Profissão</h2>
+          <p>Entenda o papel fundamental do Arquiteto e Urbanista no desenho das cidades e espaços humanos.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card about-card">
+            <div class="icon-box"><i class="fa-solid fa-drafting-compass"></i></div>
+            <h3>O que faz um Arquiteto?</h3>
+            <p>O arquiteto planeja, projeta e organiza espaços internos e externos, considerando estética, funcionalidade, conforto térmico/acústico, sustentabilidade e custos. Seu trabalho vai desde a concepção de uma casa até o planejamento urbano de grandes metrópoles.</p>
+          </div>
+
+          <div class="card about-card">
+            <div class="icon-box"><i class="fa-solid fa-city"></i></div>
+            <h3>Importância para a Sociedade</h3>
+            <p>Arquitetura é saúde pública, inclusão social e preservação ambiental. Cidades bem planejadas reduzem o tempo de trânsito, previnem desastres naturais, promovem acessibilidade para pessoas com deficiência e preservam o patrimônio histórico e cultural de uma nação.</p>
+          </div>
+        </div>
+
+        <div class="routine-box">
+          <h3><i class="fa-solid fa-clock-rotate-left"></i> Rotina e Atribuições</h3>
+          <div class="routine-grid">
+            <div class="routine-item">
+              <i class="fa-solid fa-comments"></i>
+              <div>
+                <h4>Briefing e Clientes</h4>
+                <p>Reuniões para compreender necessidades, desejos e orçamento do projeto.</p>
+              </div>
+            </div>
+            <div class="routine-item">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <div>
+                <h4>Criação e Modelagem</h4>
+                <p>Elaboração de plantas 2D, maquetes 3D e renderizações fotorrealistas.</p>
+              </div>
+            </div>
+            <div class="routine-item">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <div>
+                <h4>Acompanhamento de Obras</h4>
+                <p>Visitas técnicas para garantir execução conforme o projeto executivo.</p>
+              </div>
+            </div>
+            <div class="routine-item">
+              <i class="fa-solid fa-file-contract"></i>
+              <div>
+                <h4>Aprovações Legais</h4>
+                <p>Adequação do projeto ao Plano Diretor e normas da prefeitura local.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fatos Históricos -->
+    <section id="historia" class="section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Evolução Histórica</h2>
+          <p>Uma jornada cronológica das primeiras construções à arquitetura digital.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-img">
+              <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" alt="Parthenon na Grécia Antiga">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Antiguidade Clássica (Século V a.C.)</span>
+              <h3>Ordens Arquitetônicas & Proporção</h3>
+              <p>Com os gregos e romanos, surgiram os primeiros tratados teóricos (como Vitrúvio e seus pilares: <em>Firmitas, Utilitas, Venustas</em> — Solidez, Utilidade e Beleza). A arquitetura established ordens clássicas e monumentalidade pública.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-img">
+              <img src="https://images.unsplash.com/photo-1548625361-185e78344605?auto=format&fit=crop&w=800&q=80" alt="Catedral Gótica com Vitrais">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Idade Média & Renascimento (Sécs. XII - XVI)</span>
+              <h3>Engenharia das Catedrais e Perspectiva</h3>
+              <p>O período gótico trouxe os arcos ogivais e arcobotantes, permitindo edifícios altíssimos e iluminados por vitrais. No Renascimento, Brunelleschi e Da Vinci uniram arte e geometria com o domínio da perspectiva linear.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-img">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Arquitetura de Concreto e Vidro Modernista">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Revolução Industrial & Modernismo (Sécs. XIX - XX)</span>
+              <h3>Aço, Concreto Armado e Oscar Niemeyer</h3>
+              <p>O ferro e o concreto transformaram o modo de construir. O Movimento Moderno (Le Corbusier, Mies van der Rohe) estabeleceu a forma seguindo a função. No Brasil, Niemeyer e Lúcio Costa revolucionaram com as curvas de Brasília.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-img">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Arquitetura Paramétrica e Sustentável Atual">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Era Atual (Século XXI)</span>
+              <h3>Sustentabilidade, BIM e Impressão 3D</h3>
+              <p>A arquitetura contemporânea integra tecnologia BIM (Building Information Modeling), computação paramétrica e eficiência energética extrema. O foco é neutralizar a pegada de carbono e criar cidades resilientes.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panorama Atual e Mercado -->
+    <section id="mercado" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Panorama & Mercado</h2>
+          <p>Dados estatísticos, indicadores econômicos e áreas de atuação para o profissional moderno.</p>
+        </div>
+
+        <div class="grid grid-3 stats-cards">
+          <div class="card stat-card">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            <span class="stat-num">R$ 7.500</span>
+            <span class="stat-label">Média Salarial Inicial (BR)</span>
+          </div>
+          <div class="card stat-card">
+            <i class="fa-solid fa-building-user"></i>
+            <span class="stat-num">+110 mil</span>
+            <span class="stat-label">Arquitetos Ativos no Brasil</span>
+          </div>
+          <div class="card stat-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <span class="stat-num">+14%</span>
+            <span class="stat-label">Crescimento Estimado até 2030</span>
+          </div>
+        </div>
+
+        <div class="grid grid-2 charts-grid">
+          <div class="card chart-card">
+            <h3>Distribuição por Áreas de Atuação</h3>
+            <canvas id="areasChart"></canvas>
+          </div>
+          <div class="card chart-card">
+            <h3>Demanda por Competências Tecnológicas</h3>
+            <canvas id="techChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- O Nosso Stand (Galeria da Feira) -->
+    <section id="stand" class="section bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>O Nosso Stand</h2>
+          <p>Registro oficial da nossa apresentação, projetos expostos e maquetes na Feira de Profissões.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" data-caption="Apresentação do Nosso Stand aos alunos e visitantes durante a Feira.">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Apresentação do Stand">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80" data-caption="Maquete física desenvolvida pela equipe em escala 1:50.">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=600&q=80" alt="Maquete Física">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=1200&q=80" data-caption="Desenhos técnicos e pranchas explicativas expostas nos painéis do stand.">
+            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80" alt="Pranchas Técnicas">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" data-caption="Demonstração interativa de modelagem 3D em tempo real.">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Modelagem 3D">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=1200&q=80" data-caption="Amostras de materiais bioclimáticos e sustentáveis apresentados ao público.">
+            <img src="https://images.unsplash.com/photo-1517581177682-a085bb7ffb15?auto=format&fit=crop&w=600&q=80" alt="Materiais Sustentáveis">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-img="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" data-caption="Foto oficial da equipe reunida no encerramento da feira.">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Equipe do Projeto">
+            <div class="gallery-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Ver Imagem</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relato-card card">
+          <h3><i class="fa-solid fa-quote-left"></i> Relato da Experiência</h3>
+          <p>Apresentar a carreira de Arquitetura e Urbanismo na Feira de Profissões foi uma experiência extremamente enriquecedora. Tivemos a oportunidade de explicar como o planejamento espacial impacta diretamente o bem-estar social. Durante as demonstrações com as maquetes físicas e pranchas interativas, o público pôde vivenciar de perto a união entre a criatividade artística e a precisão técnica da profissão.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Arquitetura & Urbanismo</h3>
+        <p>Projeto acadêmico desenvolvido para a Feira de Profissões.</p>
+      </div>
+
+      <div class="footer-credits">
+        <p><strong>Desenvolvido por:</strong> Estudante / Equipe</p>
+        <p><strong>Turma:</strong> 3º Ano do Ensino Médio</p>
+        <p><strong>Disciplina:</strong> Projeto Integrador / Geografia e História</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Registro Oficial do Projeto. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal para Zoom das Fotos -->
+  <div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Zoom da Foto">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
